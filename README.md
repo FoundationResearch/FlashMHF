@@ -96,6 +96,5 @@ FlashMHF/
 ├── configs/                      # Model configurations
 │   ├── baseline/                 # SwiGLU baseline configs
 │   ├── mhffn/                    # Naive multi-head FFN configs  
-│   └── mhffnmoe/                 # FlashMHF configs
-└── paper.tex                     # Research paper
+└── └── mhffnmoe/                 # FlashMHF configs
 ```
