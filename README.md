@@ -1,11 +1,5 @@
 # FlashMHF: Flash Multi-Head Feed-Forward Network
 
-**[Paper](paper.tex)** | **[Models](models/flashmhf/)** | **[Kernels](kernels/)**
-
-[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
-[![Python 3.8+](https://img.shields.io/badge/python-3.8+-blue.svg)](https://www.python.org/downloads/release/python-380/)
-[![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-orange.svg)](https://pytorch.org/)
-
 ## Overview
 
 FlashMHF introduces a novel **Flash Multi-Head Feed-Forward Network** architecture that addresses the fundamental limitations of naive Multi-Head FFNs through two key innovations:
