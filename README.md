@@ -1,5 +1,7 @@
 # FlashMHF: Flash Multi-Head Feed-Forward Network
 
+**Official open-source implementation for the paper**: [Flash Multi-Head Feed-Forward Network (arXiv:2512.06989)](https://www.arxiv.org/abs/2512.06989)
+
 ## Overview
 
 FlashMHF introduces a novel **Flash Multi-Head Feed-Forward Network** architecture that addresses the fundamental limitations of naive Multi-Head FFNs through two key innovations:
@@ -97,4 +99,22 @@ FlashMHF/
 │   ├── baseline/                 # SwiGLU baseline configs
 │   ├── mhffn/                    # Naive multi-head FFN configs  
 └── └── mhffnmoe/                 # FlashMHF configs
+```
+
+## Paper
+
+- **Title**: *Flash Multi-Head Feed-Forward Network*
+- **Authors**: Minshen Zhang, Xiang Hu, Jianguo Li, Wei Wu, Kewei Tu
+- **arXiv**: [2512.06989](https://www.arxiv.org/abs/2512.06989)
+
+If you find this repository useful, please cite:
+
+```bibtex
+@article{zhang2025flashmhf,
+  title        = {Flash Multi-Head Feed-Forward Network},
+  author       = {Zhang, Minshen and Hu, Xiang and Li, Jianguo and Wu, Wei and Tu, Kewei},
+  journal      = {arXiv preprint arXiv:2512.06989},
+  year         = {2025},
+  url          = {https://www.arxiv.org/abs/2512.06989}
+}
 ```
