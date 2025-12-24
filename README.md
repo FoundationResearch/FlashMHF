@@ -104,7 +104,7 @@ FlashMHF/
 ## Paper
 
 - **Title**: *Flash Multi-Head Feed-Forward Network*
-- **Authors**: Minshen Zhang, Xiang Hu, Jianguo Li, Wei Wu, Kewei Tu
+- **Authors**: Minshen Zhang*, Xiang Hu*, Jianguo Li, Wei Wu, Kewei Tu
 - **arXiv**: [2512.06989](https://www.arxiv.org/abs/2512.06989)
 
 If you find this repository useful, please cite:
