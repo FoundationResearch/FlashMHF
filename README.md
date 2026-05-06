@@ -1,10 +1,10 @@
-# FlashMHF: Flash Multi-Head Feed-Forward Network
+# FlashFFN: Flash Multi-Head Feed-Forward Network
 
 **Official open-source implementation for the paper**: [Flash Multi-Head Feed-Forward Network (arXiv:2512.06989)](https://www.arxiv.org/abs/2512.06989)
 
 ## Overview
 
-FlashMHF introduces a novel **Flash Multi-Head Feed-Forward Network** architecture that addresses the fundamental limitations of naive Multi-Head FFNs through two key innovations:
+FlashFFN introduces a novel **Flash Multi-Head Feed-Forward Network** architecture that addresses the fundamental limitations of naive Multi-Head FFNs through two key innovations:
 
 1. **Scale-Balanced Parallel Sub-Networks**: Maintains optimal dimension ratios across model scales through dynamically weighted parallel sub-networks
 2. **Memory-Efficient Flash Kernel**: I/O-aware fused kernel that computes outputs online in SRAM, eliminating the memory explosion problem
@@ -19,7 +19,7 @@ FlashMHF introduces a novel **Flash Multi-Head Feed-Forward Network** architectu
 
 ## Architecture
 
-FlashMHF draws inspiration from the structural symmetry between self-attention and FFNs:
+FlashFFN draws inspiration from the structural symmetry between self-attention and FFNs:
 
 ```
 Attention: softmax(QK^T/√d_k)V
@@ -57,7 +57,7 @@ We provide pre-configured models at different scales:
 | Baseline (SwiGLU) | 3.030 | 20.69 |
 | PKV (d_h=128) | 3.334 | 28.07 |
 | MH-FFN (d_h=128) | 3.031 | 20.71 |
-| **FlashMHF (d_h=128)** | **3.014** | **20.36** |
+| **FlashFFN (d_h=128)** | **3.014** | **20.36** |
 
 ### Memory & Speed Improvements
 
@@ -67,7 +67,7 @@ We provide pre-configured models at different scales:
 
 ## Kernels
 
-FlashMHF includes optimized kernel implementations:
+FlashFFN includes optimized kernel implementations:
 
 ### Triton Kernels
 - **Location**: `kernels/triton/`
@@ -82,8 +82,8 @@ FlashMHF includes optimized kernel implementations:
 ## Repository Structure
 
 ```
-FlashMHF/
-├── models/flashmhf/              # Model implementations
+FlashFFN/
+├── models/FlashFFN/              # Model implementations
 │   ├── modeling_mhffnmoe.py      # Main model class
 │   ├── configuration_mhffnmoe.py # Model configuration
 │   └── convert_mhffnmoe_weights_to_hf.py
@@ -98,5 +98,5 @@ FlashMHF/
 ├── configs/                      # Model configurations
 │   ├── baseline/                 # SwiGLU baseline configs
 │   ├── mhffn/                    # Naive multi-head FFN configs  
-└── └── mhffnmoe/                 # FlashMHF configs
+└── └── mhffnmoe/                 # FlashFFN configs
 ```
