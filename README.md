@@ -12,8 +12,8 @@ FlashMHF introduces a novel **Flash Multi-Head Feed-Forward Network** architectu
 ### Key Features
 
 - 🚀 **Superior Performance**: Consistently outperforms SwiGLU FFN baselines on perplexity and downstream tasks
-- ⚡ **Memory Efficient**: 3-5x reduction in peak GPU memory usage compared to SwiGLU FFN  
-- 🔥 **Fast Inference**: Up to 1.08x speedup on Hopper architecture
+- ⚡ **Memory Efficient**: 3-4x reduction in peak GPU memory usage compared to SwiGLU FFN  
+- 🔥 **Fast Inference**: Up to 1.35x speedup on Hopper architecture
 - 📈 **Scalable**: Validated on models from 128M to 1.3B parameters
 - 🛠️ **Production Ready**: Optimized kernels for both Triton and ThunderKittens (CUDA)
 
@@ -99,22 +99,4 @@ FlashMHF/
 │   ├── baseline/                 # SwiGLU baseline configs
 │   ├── mhffn/                    # Naive multi-head FFN configs  
 └── └── mhffnmoe/                 # FlashMHF configs
-```
-
-## Paper
-
-- **Title**: *Flash Multi-Head Feed-Forward Network*
-- **Authors**: Minshen Zhang*, Xiang Hu*, Jianguo Li, Wei Wu, Kewei Tu
-- **arXiv**: [2512.06989](https://www.arxiv.org/abs/2512.06989)
-
-If you find this repository useful, please cite:
-
-```bibtex
-@article{zhang2025flashmhf,
-  title        = {Flash Multi-Head Feed-Forward Network},
-  author       = {Zhang, Minshen and Hu, Xiang and Li, Jianguo and Wu, Wei and Tu, Kewei},
-  journal      = {arXiv preprint arXiv:2512.06989},
-  year         = {2025},
-  url          = {https://www.arxiv.org/abs/2512.06989}
-}
 ```
